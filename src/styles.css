@@ -1,3 +1,5 @@
+
+
 /* ===== Global Styles ===== */
 * {
   box-sizing: border-box;
@@ -10,6 +12,10 @@ body {
   line-height: 1.6;
   color: #1a1a1a;
   background-color: #fefefe;
+}
+
+.portfolio{
+  display: flex;
 }
 
 a {
