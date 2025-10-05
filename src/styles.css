@@ -1,6 +1,4 @@
 
-
-/* ===== Global Styles ===== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,7 +12,7 @@ body {
   background-color: #fefefe;
 }
 
-.portfolio{
+.portfolio {
   display: flex;
 }
 
@@ -43,6 +41,7 @@ a:hover {
   background-color: #ffffff;
   border-right: 1px solid #e0e0e0;
   text-align: center;
+  height: 100vh;
 }
 
 .sidebar .headshot {
@@ -97,7 +96,8 @@ section h2 {
   color: #1a1a1a;
 }
 
-section p, section ul {
+section p,
+section ul {
   font-size: 1rem;
   color: #333;
   margin-bottom: 20px;
@@ -129,9 +129,12 @@ article em {
 
 /* ===== Projects Section ===== */
 #projects {
-  display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.project-cards-container {
+  display: flex;
 }
 
 .project-card {
@@ -141,11 +144,12 @@ article em {
   padding: 20px;
   width: 280px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 10px;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .project-card h3 {
@@ -188,4 +192,93 @@ footer {
   #projects {
     justify-content: center;
   }
+}
+
+.timeline-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+  color: #0f172a;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  margin-left: 20px;
+  padding-left: 30px;
+  border-left: 2px solid #e2e8f0;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -10px;
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  background-color: #3b82f6;
+  border-radius: 50%;
+  border: 3px solid #f9fafb;
+}
+
+.timeline-date {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 10px;
+}
+
+.timeline-content {
+  background: white;
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.timeline-content h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.timeline-content p {
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+
+.info-icon {
+  margin: 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .timeline {
+    margin-left: 10px;
+    padding-left: 20px;
+  }
+
+  .timeline-content {
+    padding: 14px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
 }
