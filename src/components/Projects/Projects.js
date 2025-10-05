@@ -1,7 +1,7 @@
 
 const ProjectsComponent = () => {
     return (<section id="projects">
-        <h2>Projects</h2>
+        <h2 className="section-title">Projects</h2>
         <div className="project-cards-container">
             <div className="project-card">
                 <h3>Reusable UI Component Library</h3>
@@ -14,7 +14,7 @@ const ProjectsComponent = () => {
             <div className="project-card">
                 <h3>Improving Hospitality Spend using Machine Learning</h3>
                 <p>Built a predictive model for a major procurement firm using Python (pandas, NumPy, matplotlib), improving spend
-prediction accuracy by 66% and identifying $2M in missed spend through data analysis and user review data scraping..</p>
+prediction accuracy by 66% and identifying $2M in missed spend through data analysis and user review data scraping.</p>
             </div>
         </div>
     </section>)
