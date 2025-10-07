@@ -5,6 +5,7 @@ import ProjectsComponent from "./components/Projects/Projects";
 import ExperienceComponent from "./components/Experience/Experience";
 import ContactMeComponent from "./components/Contact/Contact";
 import AboutComponent from "./components/AboutMe/AboutMe";
+import ExperiencesComponent from "./components/Experience/Experiences";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -38,7 +39,7 @@ const ContentComponent = () => {
 
         <main className="content">
             <AboutComponent />
-            <ExperienceComponent />
+            <ExperiencesComponent />
             <ProjectsComponent />
              <FooterComponent/>
         </main>
