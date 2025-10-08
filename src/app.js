@@ -1,17 +1,17 @@
 
-import React from "react";
 import ReactDOM from "react-dom/client";
 import ProjectsComponent from "./components/Projects/Projects";
-import ExperienceComponent from "./components/Experience/Experience";
 import ContactMeComponent from "./components/Contact/Contact";
 import AboutComponent from "./components/AboutMe/AboutMe";
 import ExperiencesComponent from "./components/Experience/Experiences";
+import headshot from "./assets/headshot.png";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const ProfileComponent = () => {
     return (
         <aside className="sidebar">
+            {/* <img src={headshot} alt="Payal Pandya" className="profile-img" /> */}
             <h1>Payal Pandya</h1>
             <p>Senior Software Engineer</p>
             <ContactMeComponent />
@@ -29,7 +29,7 @@ const ProfileComponent = () => {
 const FooterComponent = () => {
     return (
         <footer>
-            <p>&copy; 2025 Payal Pandya. All rights reserved.</p>
+            <p>&copy; 2025 Payal Pandya. All rights reserved. This application is built using React</p>
         </footer>
     )
 }
