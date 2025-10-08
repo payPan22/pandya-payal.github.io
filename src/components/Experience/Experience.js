@@ -8,13 +8,13 @@ const Experience = ({experience}) => {
         <div>
             <div className="timeline-dot"></div>
             <div className="timeline-date">{date}</div>
-            <div className="timeline-content">
-                <h2>{position}</h2>
+            <div className="card">
+                <h3>{position}</h3>
                 <p className="company">{company}</p>
                 <p>
                     {description}
                 </p>
-                <div>
+                <div className="skills">
                     <Chips skills={skills}></Chips>
                 </div>
             </div>
