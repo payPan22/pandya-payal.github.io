@@ -5,6 +5,8 @@ import ContactMeComponent from "./components/Contact/Contact";
 import AboutComponent from "./components/AboutMe/AboutMe";
 import ExperiencesComponent from "./components/Experience/Experiences";
 import headshot from "./assets/headshot.png";
+import Greetings from "./components/Greetings/Greetings";
+import Education from "./components/Education/Education";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -19,6 +21,7 @@ const ProfileComponent = () => {
                 <ul>
                     <li><a href="#about">About Me</a></li>
                     <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
                     <li><a href="#projects">Projects</a></li>
                 </ul>
             </nav>
@@ -38,8 +41,10 @@ const ContentComponent = () => {
     return (
 
         <main className="content">
+            <Greetings/>
             <AboutComponent />
             <ExperiencesComponent />
+            <Education></Education>
             <ProjectsComponent />
              <FooterComponent/>
         </main>
